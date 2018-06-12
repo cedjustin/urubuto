@@ -1,0 +1,138 @@
+extends ./layout
+block content
+  div(style='height:100%')
+    div.shadow.p-3(style="height:100%;background:linear-gradient(rgb(246,198,144),rgb(236,143,115))")
+      div.container(style='height:10%')
+        nav(class="navbar navbar-expand-lg navbar-dark")
+          div
+            img.animated.JackInTheBox(src='logo-Recovered.png' style='width:50px;height:50px')
+          a(class="navbar-brand" href="/") Urubuto
+          button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span(class="navbar-toggler-icon")
+          div(class="collapse navbar-collapse" id="navbarSupportedContent")
+            ul(class="navbar-nav mr-auto")
+              li(class="nav-item active")
+                a(class="nav-link" href="/") Home 
+                 span(class="sr-only") (current)
+              li(class="nav-item")
+                a(class="nav-link" href="#") AboutUS
+              li(class="nav-item")
+                a(class="nav-link-disabled" href="#")
+      div.container-fluid(style='height:90%;')
+        div.row.container-fluid(style='height:5%;')
+          div.col-md-2
+            div.container
+              img.animated.fadeInLeft(src='cloud.png' style='width:300px;height:180px')
+          div.col-md-8.container
+          div.col-md-2
+            div.container
+              img.animated.fadeInRight(src='sun.png' style='width:100px;height:85px')
+        div.row.container-fluid(style='height:95%;')
+          div.col-md-2
+          div.col-md-8.container.text-center(style='height:100%;').d-flex.align-items-center
+            div(class="jumbotron" style="background:none")
+              h1(class="display-4", style='color: white') Urubuto
+              p.text-light(class="lead") Connect with your kids at school using just your smart phone or laptop.
+              hr(class="my-4" style='color:#8a79af')
+              p.text-light Urubuto is a system where you can get all information about your child's performance at school, we work with hundreds of schools in the country from nursery to highschools.
+              p(class="lead")
+                a(class="btn btn-light btn-lg" href="login" role="button") 
+                  span(style='color:#8a79af') Login
+          div.col-md-2
+    div
+      div.navbar.navbar-expand-lg(style='height:auto;background-color:#33354a')
+        div.container-fluid
+          img(src='Users.png' style='width:30px;height:30px')
+    div(style='height:auto;background:#13293d')
+      div.row.container-fluid
+        div.col-md-4.col-sm-4.col-xs-12.container.d-flex.align-items-center
+          center
+            img(src='phone.png' style='width:width:100%;height:100%')
+        div.col-md-8.col-sm-8.col-xs-12.d-flex.align-items-center.container-fluid
+          div.jumbotron(style='background:none')
+            h1.display-4.text-light Software Features
+            p.lead.text-light URUBUTO Education system
+            hr.my-4(style='background-color:white')
+            div
+              table.table.table-striped(style='background:#eef0f2')
+                tbody
+                  tr
+                    th(scope='row') 
+                      img(src='icons8-push-notifications-64.png' style='width:30px;height:30px')
+                    td Discipline and permission Management with instant notification to the parents
+                  tr
+                    th(scope='row')
+                      img(src='icons8-note-64.png' style='width:30px;height:30px')
+                    td Class attendance monitoring
+                  tr
+                    th(scope='row')
+                      img(src='icons8-line-chart-64.png' style='width:30px;height:30px')
+                    td Advanced analytics reporting engine for the School
+                  tr
+                    th(scope='row')
+                      img(src='icons8-report-card-64.png' style='width:30px;height:30px')
+                    td Marks/results and instant notification after publication
+                  tr
+                    th(scope='row')
+                      img(src='icons8-collaboration-64.png' style='width:30px;height:30px')
+                    td Direct communication between the school and the parents free of charge via our USSD 
+                      span.badge *775#
+                  tr
+                    th(scope='row')
+                      img(src='icons8-library-64.png' style='width:30px;height:30px')
+                    td School Library management
+                  tr
+                    th(scope='row')
+                      img(src='icons8-natural-user-interface-2-64.png' style='width:30px;height:30px')
+                    td The system generates complex various reports with one click
+                  tr
+                    th(scope='row')
+                      img(src='icons8-plugin-64.png' style='width:30px;height:30px')
+                    td More features to come as the solution evolve based on the need of the parents and schools.
+    div.container-fluid(style='height:auto;background:#f2f2f0')
+      div.row
+        div.col-md-4.col-sm-4.col-xs-12.d-flex.align-items-center.pt-3.pb-3()
+          div(class="card shadow p-3" style="width: 20rem;")
+            div(class="card-body")
+              h5(class="card-title") Customer Support
+              h6(class="card-subtitle mb-2 text-muted") 
+                img(src='icons8-marker-64.png' style='width:30px;height:30px')
+                span BK Headquater/ Kigali 
+                small CarFreeZone
+              p(class="card-text")
+                img(src='icons8-phone-64.png' style='width:30px;height:30px')
+                span +250 788 650 044
+              p(class="card-text")
+                img(src='icons8-touchscreen-64.png' style='width:30px;height:30px')
+                span +250 788 143 636
+              p(class="card-text")
+                img(src='icons8-secured-letter-64.png' style='width:30px;height:30px')
+                span bktechouse@bk.rw
+        div.col-md-8.col-sm-8.col-xs-12.d-flex.align-items-center.justify-content-center
+          div.card.shadow(style="width: 40rem;")
+            div.card-body
+              div(class="input-group")
+                input(type="text" class="form-control" placeholder="YourName")
+                input.ml-2(type="email" class="form-control" placeholder="YourEmail")
+              div.pt-3(class="input-group")
+                textarea(class="form-control" placeholder="YourMessage")
+              div.d-flex.justify-content-center.input-group
+                button.mt-3(type="button" class="btn btn-lg" style='background:rgb(236,143,115)')
+                  span.text-light Send message
+    footer(class="navbar" style="height:11%;width:100%;background-color:#f9f9f9")
+      div(class="container align-items-center")
+        span(class="text-muted") Urubuto
+         small designed by cedrick
+        span 
+         b PoweredBy
+         small BK_techHouse
+        div
+          a.ml-2(href='https://twitter.com/bktechouse')
+            img.inline(src='twitter.png' style='width:30px;height:30px')
+          a.ml-2(href='https://www.facebook.com/BKTecHouseltd')
+            img.inline(src='facebook.png' style='width:30px;height:30px')
+          a.ml-2(href='https://www.instagram.com/bktechouseltd.rw/')
+            img.inline(src='instagram.png' style='width:30px;height:30px')
+        //- div.col-sm-4
+          div.container
+            img(src='8a7b19a05bc11e66c38b700a7a21fd5e.png' style="width:100%;height:65%")
