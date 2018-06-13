@@ -1,41 +1,41 @@
 extends ./layout
 block content
-  div(style="width:auto;height:100%")
-    div(style="height:auto")
-      nav(class="navbar navbar-expand-lg navbar-light")
-        a(class="navbar-brand text-success" href="/" style="") Urubuto
-        button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-          span(class="navbar-toggler-icon")
-        div(class="collapse navbar-collapse" id="navbarSupportedContent")
-          ul(class="navbar-nav mr-auto")
-            li(class="nav-item active")
-              a(class="nav-link" href="/") Home 
-               span(class="sr-only") (current)
-            li(class="nav-item")
-              a(class="nav-link" href="#") AboutUS
-            lli(class="nav-item")
-              a(class="nav-link-disabled" href="#") 
-          form(class="form-inline my-2 my-lg-0")
-            button(class="btn btn-outline-success my-2 my-sm-0" type="submit") SignUp
-    div.col-md-12.d-flex.justify-content-center.align-items-center(style="height:80%")
-      div.card.border-top.border-success(style="width: 30rem;")
-        div.card-body
-          div.d-flex.align-items-center
-            img.d-inline(src='unlock.png' style='width:50px;height:50px')
-            h4.ml-3.d-inline.text-md-center.font-weight-light Sign in to Urubuto Software
-          div.mt-3(class="form-group")
-            label(for="exampleInputEmail1") Email address
-            input(type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email")
-            small(id="emailHelp" class="form-text text-muted") We'll never share your email with anyone else.
-            label(for="exampleInputPassword1") Password
-            input(type="password" class="form-control" id="exampleInputPassword1" placeholder="Password")
-          div.d-flex.justify-content-center
+  div(style='height:100%')
+    div.shadow.p-3(style="height:89%;background:linear-gradient(rgb(246,198,144),rgb(236,143,115))")
+      div.container(style='height:10%')
+        nav(class="navbar navbar-expand-lg navbar-dark")
+          div
+            img.animated.JackInTheBox(src='logo-Recovered.png' style='width:50px;height:50px')
+          a(class="navbar-brand" href="/") Urubuto
+          button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+            span(class="navbar-toggler-icon")
+          div(class="collapse navbar-collapse" id="navbarSupportedContent")
+            ul(class="navbar-nav mr-auto")
+              li(class="nav-item active")
+                a(class="nav-link" href="/") Home 
+                 span(class="sr-only") (current)
+              li(class="nav-item")
+                a(class="nav-link" href="#") AboutUS
+              li(class="nav-item")
+                a(class="nav-link-disabled" href="#")
+
+      div.container.d-flex.justify-content-center.align-items-center(style='height:80%')
+        div.card.shadow(style="width: 30rem;")
+          div.card-body
+            div.d-flex.justify-content-center.align-items-center
+              img.animated.flip(src='user2.png' style='width:50px;height:50px')
+            div.mt-3(class="form-group")
+              input.border-bottom(style="border:none" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email")
+              small(id="emailHelp" class="form-text text-muted")
+              input.border-bottom(style="border:none" type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password")
+            div.d-flex.justify-content-center
               a.card-link(href="#")
                 img.d-inline(src='settings.png' style='width:20px;height:20px')
                 p.d-inline Forgot password?
-          div.d-flex.justify-content-center
-            button.mt-3(type="submit" class="btn btn-success")
-              span.d-inline Login
+            div.d-flex.justify-content-center.align-items-center
+              button.mt-3(type="submit" class="btn btn-dark")
+                span.d-inline Login
+      
     footer(class="navbar" style="height:11%;width:100%;background-color:#f9f9f9")
       div(class="container align-items-center")
         span(class="text-muted") Urubuto

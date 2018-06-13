@@ -16,7 +16,7 @@ we.get('/login',function(req,res){
   res.render('login');
 })
 
-var port = 3001;
+var port = process.env.PORT || 3001;
 we.listen(port,function(req,res){
   console.log('Urubuto at port'+port);
 })

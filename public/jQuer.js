@@ -1,0 +1,9 @@
+$(document).ready(function(){
+  flag=0;
+  $("#floating").click(function(){
+    if(flag==0)
+    {
+      $("#floating").animate({height:'10px',width:'10px'},100)
+    }
+  })
+})

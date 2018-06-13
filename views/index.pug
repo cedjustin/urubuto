@@ -1,6 +1,6 @@
 extends ./layout
 block content
-  div(style='height:100%')
+  div(style='height:100%;background-color:rgb(236,143,115)')
     div.shadow.p-3(style="height:100%;background:linear-gradient(rgb(246,198,144),rgb(236,143,115))")
       div.container(style='height:10%')
         nav(class="navbar navbar-expand-lg navbar-dark")
@@ -18,6 +18,7 @@ block content
                 a(class="nav-link" href="#") AboutUS
               li(class="nav-item")
                 a(class="nav-link-disabled" href="#")
+
       div.container-fluid(style='height:90%;')
         div.row.container-fluid(style='height:5%;')
           div.col-md-2
@@ -36,14 +37,32 @@ block content
               hr(class="my-4" style='color:#8a79af')
               p.text-light Urubuto is a system where you can get all information about your child's performance at school, we work with hundreds of schools in the country from nursery to highschools.
               p(class="lead")
-                a(class="btn btn-light btn-lg" href="login" role="button") 
-                  span(style='color:#8a79af') Login
+                a.mr-1(class="btn btn-light btn-lg" href="login" role="button") 
+                  span(style='color:#8a79af') SignIn
+                a.ml-1(class="btn btn-light btn-lg" href="#" role="button") 
+                  span(style='color:#8a79af') SignUp
           div.col-md-2
+            div.animated.infinite.fadeIn
+              div.d-flex.align-items-center.justify-content-center.animated.infinite.slideInDown(id="floating")
+                div.row
+                  div.col-12
+                    i.fas.fa-angle-down
+                  div.col-12
+                    i.fas.fa-angle-down
+                  div.col-12
+                    i.fas.fa-angle-down
     div
-      div.navbar.navbar-expand-lg(style='height:auto;background-color:#33354a')
+      div.navbar.navbar-expand-lg(style='height:auto;background-color:#33354a;')
         div.container-fluid
-          img(src='Users.png' style='width:30px;height:30px')
-    div(style='height:auto;background:#13293d')
+          div
+            //img.d-inline(src='icons8-conference-64.png' style='width:30px;height:30px')
+            div.d-inline
+              span.navbar-brand(style='color:#f2f2f0') ActiveAccounts:
+              span.text-success 131,223,390
+          div
+            span.navbar-brand(style='color:#f2f2f0') TransactionsMade:
+            span.text-success 1,202,390,920
+    div.shadow(style='height:auto;background:#13293d')
       div.row.container-fluid
         div.col-md-4.col-sm-4.col-xs-12.container.d-flex.align-items-center
           center
@@ -89,7 +108,7 @@ block content
                     th(scope='row')
                       img(src='icons8-plugin-64.png' style='width:30px;height:30px')
                     td More features to come as the solution evolve based on the need of the parents and schools.
-    div.container-fluid(style='height:auto;background:#f2f2f0')
+    div.container-fluid(style='height:auto;background:rgb(236,143,115)')
       div.row
         div.col-md-4.col-sm-4.col-xs-12.d-flex.align-items-center.pt-3.pb-3()
           div(class="card shadow p-3" style="width: 20rem;")
